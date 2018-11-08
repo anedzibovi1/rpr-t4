@@ -1,9 +1,12 @@
 package ba.unsa.etf.rpr;
 
 public class ObavezniPredmet extends Predmet{
-    ObavezniPredmet(String ime, String lista, int poeni) {
+    ObavezniPredmet(String ime, int poeni) {
         naziv=ime;
-        spisak=lista;
         ects=poeni;
     }
+    public int dajBrojECTSPoena() {return this.ects;}
+    public String dajNazivPredmeta() {return this.naziv;}
+
+
 }
